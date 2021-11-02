@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ürün Detay</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container-fluid py-2 pl-120 pr-120">
+        <a class="navbar-brand" href="anasayfa.html">
+          <img class="navbar-logo" src="img/deltamed-logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="anasayfa.html">ANASAYFA</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="urunler.html"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ÜRÜNLER
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="urun-detay.html">ÜRÜN DETAY</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="temsilcilikler.html">TEMSİLCİLİKLER</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                KURUMSAL
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="hakkimizda.html">HAKKIMIZDA</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="kalite-politikamiz.html"
+                    >KALİTE POLİTİKAMIZ</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="tesvik-odulleri.html"
+                    >TEŞVİK ÖDÜLLERİ</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="iletisim.html">İLETİŞİM</a>
+            </li>
+          </ul>
+          <ul class="lang mb-2 mb-lg-0 px-5">
+            <li class="nav-item"><a class="nav-link" href="#">TR</a></li>
+            <li class="nav-item"><a class="nav-link">|</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">EN</a></li>
+          </ul>
+          <ul class="lang mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="tel:90-312-418-40-90"
+                ><img
+                  src="img/telefon-icon.png"
+                  width="25px"
+                  height="25px"
+                />&nbsp; +90 312 418 40 90</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navigator -->
+
+    <div class="container-fluid py-2 navigator">
+      <div class="row pl-120">
+        <ul class="navigator-ul">
+          <li class="navigator-li">
+            <a class="navigator-a" href="anasayfa.html">Anasayfa</a>
+          </li>
+          <li class="navigator-li px-3">
+            <span>˃</span>
+          </li>
+          <li class="navigator-li">
+            <a class="navigator-a" href="urunler.html">Ürünler</a>
+          </li>
+          <li class="navigator-li px-3">
+            <span>˃</span>
+          </li>
+          <li>
+            <a class="navigator-a" href="urun-detay.html">Ürün Detay</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Ürünler Title -->
+
+    <div class="container-fluid pl-115 pr-115 my-5">
+      <div class="content-title-container">
+        <p class="content-title-brand">DELTAMED</p>
+        <p class="content-title-content">ÜRÜNLER</p>
+      </div>
+    </div>
+
+    <!-- Ürünler Content -->
+
+    <div class="container-fluid mt-5">
+      <div class="row pl-120 pr-120">
+        <div class="col-sm-3 urun-tabs-container">
+          <ul class="nav flex-column" id="myTab" role="tablist">
+            <li class="nav-item urun-tabs-li" style="background-color: #48bdd7">
+              <span
+                style="
+                  padding: 15px 15px;
+                  color: white;
+                  font-weight: 500;
+                  width: 50%;
+                "
+                >ÜRÜN GRUPLARI</span
+              >
+            </li>
+            <li class="nav-item urun-tabs-li" role="presentation">
+              <button
+                class="nav-link urun-tabs-button"
+                id="home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#home"
+                type="button"
+                role="tab"
+                aria-controls="home"
+                aria-selected="true"
+              >
+                <span style="text-align: left">Hidrosefali / BOS Kontrolü</span>
+              </button>
+            </li>
+            <li class="nav-item urun-tabs-li" role="presentation">
+              <button
+                class="nav-link urun-tabs-button"
+                id="profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#profile"
+                type="button"
+                role="tab"
+                aria-controls="profile"
+                aria-selected="false"
+              >
+                <span>Dura ve Kafatası Onarımı</span>
+              </button>
+            </li>
+            <li class="nav-item urun-tabs-li" role="presentation">
+              <button
+                class="nav-link urun-tabs-button"
+                id="contact-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#contact"
+                type="button"
+                role="tab"
+                aria-controls="contact"
+                aria-selected="false"
+              >
+                <span>Kraniyal Stabilizasyon &amp; Retraksiyon</span>
+              </button>
+            </li>
+          </ul>
+          <div class="mt-5">
+            <span class="px-2" style="font-weight: 600">Ürün Arama</span>
+            <div style="background-color: #48bdd7">
+              <form class="d-flex px-2 py-2">
+                <input
+                  class="form-control me-2 input-search"
+                  type="search"
+                  placeholder="Anahtar Kelime"
+                  aria-label="Search"
+                />
+                <button class="button-search" type="submit">
+                  <span>ARA</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-9 urun-tabs-container">
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="home"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <div class="row">
+                <div class="col-sm">
+                  <img
+                    class="py-3 px-3"
+                    src="img/deltamed-amblem.png"
+                    width="100%"
+                    height="auto"
+                    alt=""
+                  />
+                </div>
+                <div class="col-sm">
+                  <h3 class="h3-title">Lorem İpsum</h3>
+                  <p class="std-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Voluptatem, debitis et maiores nulla molestias qui nesciunt
+                    quia cum ea, obcaecati quas in doloremque eaque deleniti sed
+                    cumque vero accusantium blanditiis nostrum. Tenetur est
+                    corrupti reiciendis. Molestias deserunt magnam adipisci
+                    rerum! Magnam ullam at reiciendis ducimus odit impedit autem
+                    hic nobis.
+                  </p>
+                  <button
+                    type="button"
+                    class="button-2"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Katalog Talep Et »
+                  </button>
+                  <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <button
+                            type="button"
+                            style="float: right"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                          <h3 style="text-align: center" class="h3-title">
+                            Katalog Talep Formu
+                          </h3>
+                          <p class="std-text" style="text-align: center">
+                            <em
+                              >Katalogumuzun site iletilmesi için lütfen
+                              aşağıdaki formu eksiksiz doldurunuz.</em
+                            >
+                          </p>
+                          <form
+                            method="post"
+                            id="contact-form"
+                            name="contact-form"
+                            enctype="multipart/form-data"
+                            accept-charset="utf-8"
+                          >
+                            <div class="row">
+                              <div class="col-xs-12 col-sm-12 col-md-6">
+                                <div class="form-group">
+                                  <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    class="form-control input-mg"
+                                    placeholder="Adınız *"
+                                    required=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-sm-12 col-md-6">
+                                <div class="form-group">
+                                  <input
+                                    type="text"
+                                    id="surname"
+                                    name="surname"
+                                    class="form-control input-mg"
+                                    placeholder="Soyadınız *"
+                                    required=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-sm-12 col-md-6">
+                                <div class="form-group">
+                                  <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    class="form-control input-mg"
+                                    placeholder="E-Mail Adresiniz *"
+                                    required=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-sm-12 col-md-6">
+                                <div class="form-group">
+                                  <input
+                                    type="text"
+                                    id="phone"
+                                    name="phone"
+                                    class="form-control input-mg"
+                                    placeholder="Telefon Numaranız *"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <button
+                              type="button"
+                              style="float: right"
+                              class="button-2"
+                            >
+                              Gönder »
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="profile"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+            >
+              Ürün 2
+            </div>
+            <div
+              class="tab-pane fade"
+              id="contact"
+              role="tabpanel"
+              aria-labelledby="contact-tab"
+            >
+              Ürün 3
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="pt-5">
+      <div class="container-fluid">
+        <div class="row pl-120 pr-120 footer-bg py-5">
+          <div
+            class="
+              col-xs-12 col-sm-2 col-md-2 col-lg-2
+              footer-logo-container
+              my-3
+            "
+          >
+            <a href="anasayfa.html">
+              <img
+                class="footer-logo py-5"
+                src="img/deltamed-logo.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div
+            class="
+              col-xs-12 col-sm-12 col-md-4 col-lg-4
+              py-4
+              btn-group-vertical
+              footer-menu
+            "
+          >
+            <table style="border-collapse: collapse; width: 100%">
+              <tbody>
+                <tr>
+                  <td class="vertical-text" style="width: 5%" rowspan="5">
+                    MENÜ
+                  </td>
+                  <td class="contact-text" style="width: 95%">
+                    <a href="anasayfa.html" class="footer-menu-link"
+                      >ANASAYFA</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="contact-text" style="width: 95%">
+                    <a href="urunler.html" class="footer-menu-link">ÜRÜNLER</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="contact-text" style="width: 95%">
+                    <a href="temsilcilikler.html" class="footer-menu-link">TEMSİLCİLİKLER</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="contact-text" style="width: 95%">
+                    <a href="hakkimizda.html" class="footer-menu-link">KURUMSAL</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="contact-text" style="width: 95%">
+                    <a href="iletisim.html" class="footer-menu-link">İLETİŞİM</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div
+            class="
+              col-xs-12 col-sm-12 col-md-4 col-lg-3
+              py-3
+              btn-group-vertical
+            "
+          >
+            <table
+              style="border-collapse: collapse; width: 100%"
+              class="footer-contact"
+            >
+              <tbody>
+                <tr>
+                  <td class="vertical-text" style="width: 5%" rowspan="4">
+                    İLETİŞİM
+                  </td>
+                  <td
+                    class="contact-text"
+                    style="
+                      width: 47.5%;
+                      vertical-align: top;
+                      font-size: larger;
+                      font-weight: 500;
+                    "
+                  >
+                    MERKEZ
+                  </td>
+                </tr>
+                <tr>
+                  <td style="width: 47.5%; vertical-align: top">
+                    Piyade Sk. No:3AA, Çankaya 06690 ANKARA
+                  </td>
+                </tr>
+                <tr>
+                  <td style="width: 47.5%; vertical-align: top">
+                    T: <a href="tel:90-312-40-90">+90 312 418 40 90</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="width: 47.5%">F: +90 312 425 81 66</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div
+            class="
+              col-xs-12 col-sm-12 col-md-4 col-lg-3
+              py-3
+              btn-group-vertical
+            "
+          >
+            <table
+              style="border-collapse: collapse; width: 100%"
+              class="footer-contact"
+            >
+              <tbody>
+                <tr>
+                  <td
+                    class="vertical-text"
+                    style="width: 5%; opacity: 0"
+                    rowspan="4"
+                  >
+                    İLETİŞİM
+                  </td>
+                  <td
+                    class="contact-text"
+                    style="
+                      width: 47.5%;
+                      vertical-align: top;
+                      font-size: larger;
+                      font-weight: 500;
+                    "
+                  >
+                    ŞUBE
+                  </td>
+                </tr>
+                <tr>
+                  <td style="width: 47.5%; vertical-align: top">
+                    Osmaniye Mh. Fildami Sitesi B Blok 0:4 Osmaniye, Bakırköy
+                    34144 İSTANBUL
+                  </td>
+                </tr>
+                <tr>
+                  <td style="width: 47.5%; vertical-align: top">
+                    T: <a href="tel:90-212-635-69-95">+90 212 635 69 95</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="width: 47.5%">F: +90 312 425 81 66</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid footer-2-bg">
+        <div class="row pl-120 pr-120">
+          <div
+            class="
+              col-xs-12 col-sm-12 col-md-4 col-lg-4
+              py-3
+              footer-text-wrapper
+            "
+          >
+            <span class="footer-text">
+              DELTAMED © 2021 Tüm hakları saklıdır.
+            </span>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 py-3">
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a href="kvkk.html" class="nav-link px-2 footer-text"
+                  >Kişisel Verilerin Korunması</a
+                >
+              </li>
+              <span class="footer-text footer-span">|</span>
+              <li class="nav-item">
+                <a
+                  href="cerez-politikasi.html"
+                  class="nav-link px-2 footer-text"
+                  >Çerez Politikası</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 py-3">
+            <a
+              href="https://www.linkedin.com/in/emin-zcn/"
+              target="_blank"
+              class="aligned-end footer-text"
+            >
+              Web Tasarım Emin ÖZCAN
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Script -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

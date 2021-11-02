@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deltamed</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container-fluid py-2 pl-120 pr-120">
+        <a class="navbar-brand" href="anasayfa.html">
+          <img class="navbar-logo" src="img/deltamed-logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="anasayfa.html"
+                >ANASAYFA</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="urunler.html"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ÜRÜNLER
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="urun-detay.html">ÜRÜN DETAY</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="temsilcilikler.html">TEMSİLCİLİKLER</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                KURUMSAL
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="hakkimizda.html">HAKKIMIZDA</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="kalite-politikamiz.html"
+                    >KALİTE POLİTİKAMIZ</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="tesvik-odulleri.html"
+                    >TEŞVİK ÖDÜLLERİ</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="iletisim.html">İLETİŞİM</a>
+            </li>
+          </ul>
+          <ul class="lang mb-2 mb-lg-0 px-5">
+            <li class="nav-item"><a class="nav-link" href="#">TR</a></li>
+            <li class="nav-item"><a class="nav-link">|</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">EN</a></li>
+          </ul>
+          <ul class="lang mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="tel:90-312-418-40-90"
+                ><img
+                  src="img/telefon-icon.png"
+                  width="25px"
+                  height="25px"
+                />&nbsp; +90 312 418 40 90</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Slider -->
+
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/slider.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="img/slider.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="img/slider.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Ürünler Title -->
+
+    <div class="container-fluid pl-115 pr-115 my-5">
+      <div class="content-title-container">
+        <p class="content-title-brand">DELTAMED</p>
+        <p class="content-title-content">ÜRÜNLER</p>
+      </div>
+    </div>
+
+    <!-- Ürünler Content -->
+
+    <div class="container-fluid pl-120 pr-120">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 card-container">
+          <div class="card text-center">
+            <div class="card-body urun-card">
+              <p class="card-title">Ürün 1</p>
+              <div class="button-hover-text"></div>
+              <a href="urun-detay.html" class="btn btn-primary urun-card-button">Detay</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 card-container">
+          <div class="card text-center">
+            <div class="card-body urun-card">
+              <p class="card-title">Ürün 1</p>
+              <div class="button-hover-text"></div>
+              <a href="#" class="btn btn-primary urun-card-button">Detay</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 card-container">
+          <div class="card text-center">
+            <div class="card-body urun-card">
+              <p class="card-title">Ürün 1</p>
+              <div class="button-hover-text"></div>
+              <a href="#" class="btn btn-primary urun-card-button">Detay</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 card-container">
+          <div class="card text-center">
+            <div class="card-body urun-card">
+              <p class="card-title">Ürün 1</p>
+              <div class="button-hover-text"></div>
+              <a href="#" class="btn btn-primary urun-card-button">Detay</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 card-container">
+          <div class="card text-center">
+            <div class="card-body urun-card">
+              <p class="card-title">Ürün 1</p>
+              <div class="button-hover-text"></div>
+              <a href="#" class="btn btn-primary urun-card-button">Detay</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 card-container">
+          <div class="card text-center">
+            <div class="card-body urun-card">
+              <p class="card-title">Ürün 1</p>
+              <div class="button-hover-text"></div>
+              <a href="#" class="btn btn-primary urun-card-button">Detay</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 card-container">
+          <div class="card text-center">
+            <div class="card-body urun-card">
+              <p class="card-title">Ürün 1</p>
+              <div class="button-hover-text"></div>
+              <a href="#" class="btn btn-primary urun-card-button">Detay</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 card-container">
+          <div class="card text-center">
+            <div class="card-body urun-card">
+              <p class="card-title">Ürün 1</p>
+              <div class="button-hover-text"></div>
+              <a href="#" class="btn btn-primary urun-card-button">Detay</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 card-container">
+          <div class="card text-center">
+            <div class="card-body urun-card">
+              <p class="card-title">Ürün 1</p>
+              <div class="button-hover-text"></div>
+              <a href="#" class="btn btn-primary urun-card-button">Detay</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 card-container">
+          <div class="card text-center">
+            <div class="card-body urun-card">
+              <p class="card-title">Ürün 1</p>
+              <div class="button-hover-text"></div>
+              <a href="#" class="btn btn-primary urun-card-button">Detay</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 card-container">
+          <div class="card text-center">
+            <div class="card-body urun-card">
+              <p class="card-title">Ürün 1</p>
+              <div class="button-hover-text"></div>
+              <a href="#" class="btn btn-primary urun-card-button">Detay</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 card-container">
+          <div class="card text-center">
+            <div class="card-body urun-card">
+              <p class="card-title">Ürün 1</p>
+              <div class="button-hover-text"></div>
+              <a href="#" class="btn btn-primary urun-card-button">Detay</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-sm text-center">
+          <a href="urunler.html" class="button-1">Tümümü Gör</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Temsilcilikler Title -->
+
+    <div class="container-fluid pl-115 pr-115 my-5">
+      <div class="content-title-container">
+        <p class="content-title-brand">DELTAMED</p>
+        <p class="content-title-content">TEMSİLCİLİKLER</p>
+      </div>
+    </div>
+
+    <!-- Temsilcilikler Content -->
+
+    <div class="container-fluid pl-120 pr-120">
+      <div class="row">
+        <div
+          class="
+            col-xs-12 col-sm-4 col-md-4 col-lg-2
+            text-center
+            temsilcilik-container
+          "
+        >
+          <a href="https://www.jnjmedicaldevices.com/en-US/product/anspach-emax-2-plus-system" target="_blank">
+            <img src="img/anspach.png" class="temsilcilik-img" alt="" />
+          </a>
+        </div>
+        <div
+          class="
+            col-xs-12 col-sm-4 col-md-4 col-lg-2
+            text-center
+            temsilcilik-container
+          "
+        >
+          <a href="#">
+            <img src="img/integra.png" class="temsilcilik-img" alt="" />
+          </a>
+        </div>
+        <div
+          class="
+            col-xs-12 col-sm-4 col-md-4 col-lg-2
+            text-center
+            temsilcilik-container
+          "
+        >
+          <a href="#">
+            <img src="img/elliquance.png" class="temsilcilik-img" alt="" />
+          </a>
+        </div>
+        <div
+          class="
+            col-xs-12 col-sm-4 col-md-4 col-lg-2
+            text-center
+            temsilcilik-container
+          "
+        >
+          <a href="#">
+            <img src="img/neos.png" class="temsilcilik-img" alt="" />
+          </a>
+        </div>
+        <div
+          class="
+            col-xs-12 col-sm-4 col-md-4 col-lg-2
+            text-center
+            temsilcilik-container
+          "
+        >
+          <a href="#">
+            <img src="img/anspach.png" class="temsilcilik-img" alt="" />
+          </a>
+        </div>
+        <div
+          class="
+            col-xs-12 col-sm-4 col-md-4 col-lg-2
+            text-center
+            temsilcilik-container
+          "
+        >
+          <a href="#">
+            <img src="img/integra.png" class="temsilcilik-img" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-sm text-center">
+          <a href="temsilcilikler.html" class="button-1">Tümünü Gör</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kalite Politikamız Title -->
+
+    <div class="container-fluid pl-115 pr-115 my-5">
+      <div class="content-title-container">
+        <p class="content-title-brand">DELTAMED</p>
+        <p class="content-title-content">KALİTE POLİTİKAMIZ</p>
+      </div>
+    </div>
+
+    <!-- Kalite Politikamız Content -->
+
+    <div class="container-fluid pl-120 pr-120">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 pt-4">
+          <p>
+            Tıp teknolojilerindeki hızlı değişimi zamanında, tam ve doğru olarak
+            izleyerek, klinik uygunluğu kanıtlanmış, yüksek teknoloji ürünü
+            cihaz ve malzemeler ile entegre çözümleri en uygun fiyat, kaliteli
+            ve sürekli bir servis ile hedef kitlemize ulaştırmayı, bunların
+            yerinde ve etkin bir biçimde kullanılması amacıyla gerekli eğitim
+            desteğini sağlamayı ve faaliyet alanımızda önder bir firma olmayı
+            hedefliyoruz.
+          </p>
+          <div class="py-5">
+            <a href="kalite-politikamiz.html" class="button-1">Devamı</a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+          <img
+            src="img/deltamed-amblem.png"
+            width="80%"
+            style="opacity: 0.4"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="pt-5">
+      <div class="container-fluid">
+        <div class="row pl-120 pr-120 footer-bg py-5">
+          <div
+            class="
+              col-xs-12 col-sm-2 col-md-2 col-lg-2
+              footer-logo-container
+              my-3
+            "
+          >
+            <a href="anasayfa.html">
+              <img
+                class="footer-logo py-5"
+                src="img/deltamed-logo.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div
+            class="
+              col-xs-12 col-sm-12 col-md-4 col-lg-4
+              py-4
+              btn-group-vertical
+              footer-menu
+            "
+          >
+            <table style="border-collapse: collapse; width: 100%">
+              <tbody>
+                <tr>
+                  <td class="vertical-text" style="width: 5%" rowspan="5">
+                    MENÜ
+                  </td>
+                  <td class="contact-text" style="width: 95%">
+                    <a href="anasayfa.html" class="footer-menu-link"
+                      >ANASAYFA</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="contact-text" style="width: 95%">
+                    <a href="urunler.html" class="footer-menu-link">ÜRÜNLER</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="contact-text" style="width: 95%">
+                    <a href="temsilcilikler.html" class="footer-menu-link">TEMSİLCİLİKLER</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="contact-text" style="width: 95%">
+                    <a href="hakkimizda.html" class="footer-menu-link">KURUMSAL</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="contact-text" style="width: 95%">
+                    <a href="iletisim.html" class="footer-menu-link">İLETİŞİM</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div
+            class="
+              col-xs-12 col-sm-12 col-md-4 col-lg-3
+              py-3
+              btn-group-vertical
+            "
+          >
+            <table
+              style="border-collapse: collapse; width: 100%"
+              class="footer-contact"
+            >
+              <tbody>
+                <tr>
+                  <td class="vertical-text" style="width: 5%" rowspan="4">
+                    İLETİŞİM
+                  </td>
+                  <td
+                    class="contact-text"
+                    style="
+                      width: 47.5%;
+                      vertical-align: top;
+                      font-size: larger;
+                      font-weight: 500;
+                    "
+                  >
+                    MERKEZ
+                  </td>
+                </tr>
+                <tr>
+                  <td style="width: 47.5%; vertical-align: top">
+                    Piyade Sk. No:3AA, Çankaya 06690 ANKARA
+                  </td>
+                </tr>
+                <tr>
+                  <td style="width: 47.5%; vertical-align: top">
+                    T: <a href="tel:90-312-40-90">+90 312 418 40 90</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="width: 47.5%">F: +90 312 425 81 66</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div
+            class="
+              col-xs-12 col-sm-12 col-md-4 col-lg-3
+              py-3
+              btn-group-vertical
+            "
+          >
+            <table
+              style="border-collapse: collapse; width: 100%"
+              class="footer-contact"
+            >
+              <tbody>
+                <tr>
+                  <td
+                    class="vertical-text"
+                    style="width: 5%; opacity: 0"
+                    rowspan="4"
+                  >
+                    İLETİŞİM
+                  </td>
+                  <td
+                    class="contact-text"
+                    style="
+                      width: 47.5%;
+                      vertical-align: top;
+                      font-size: larger;
+                      font-weight: 500;
+                    "
+                  >
+                    ŞUBE
+                  </td>
+                </tr>
+                <tr>
+                  <td style="width: 47.5%; vertical-align: top">
+                    Osmaniye Mh. Fildami Sitesi B Blok 0:4 Osmaniye, Bakırköy
+                    34144 İSTANBUL
+                  </td>
+                </tr>
+                <tr>
+                  <td style="width: 47.5%; vertical-align: top">
+                    T: <a href="tel:90-212-635-69-95">+90 212 635 69 95</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="width: 47.5%">F: +90 312 425 81 66</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid footer-2-bg">
+        <div class="row pl-120 pr-120">
+          <div
+            class="
+              col-xs-12 col-sm-12 col-md-4 col-lg-4
+              py-3
+              footer-text-wrapper
+            "
+          >
+            <span class="footer-text">
+              DELTAMED © 2021 Tüm hakları saklıdır.
+            </span>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 py-3">
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a href="kvkk.html" class="nav-link px-2 footer-text"
+                  >Kişisel Verilerin Korunması</a
+                >
+              </li>
+              <span class="footer-text footer-span">|</span>
+              <li class="nav-item">
+                <a
+                  href="cerez-politikasi.html"
+                  class="nav-link px-2 footer-text"
+                  >Çerez Politikası</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 py-3">
+            <a
+              href="https://www.linkedin.com/in/emin-zcn/"
+              target="_blank"
+              class="aligned-end footer-text"
+            >
+              Web Tasarım Emin ÖZCAN
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Script -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>
